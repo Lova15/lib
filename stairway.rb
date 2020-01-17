@@ -1,3 +1,4 @@
+#methode lance dés
 def lancer_le_dés
     puts "taper sur une touche pour lancer le dés"
     touche=gets.chomp
@@ -7,12 +8,13 @@ def lancer_le_dés
     end
     return Random.new.rand(1..6)
 end
-
+#methode pour remplir l'element du tableau contient le nombre de tours
 def remplir_array(nombre_de_tours,array)
     array.push(nombre_de_tours)
     return array
 end
 
+#methode qui calcul le statistique terminaison de la partie
 def average_finish_time(array)
     longueur=array.length
     s=0
@@ -22,6 +24,7 @@ def average_finish_time(array)
     return s
 end   
 
+#methode excecution du jeux
 def jeu_oie
     nombre_de_tours=0
     e=1
